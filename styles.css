@@ -59,6 +59,11 @@ body {
     align-items: center;
 }
 
+.menu-close {
+    display: none;
+    /* Hidden on desktop */
+}
+
 .logo img {
     height: 50px;
     margin-top: 20px;
@@ -266,9 +271,11 @@ body {
         text-align: center;
     }
 
-    .about-list li {
-        justify-content: center;
+    .about-content .description {
+        text-align: left;
     }
+
+
 }
 
 /* SECTION FEATURES */
@@ -367,6 +374,10 @@ body {
 @media (max-width: 768px) {
     .features-grid {
         grid-template-columns: 1fr;
+    }
+
+    .feature-card p {
+        text-align: justify;
     }
 }
 
@@ -1056,5 +1067,125 @@ textarea:focus {
     .footer-links {
         flex-direction: column;
         gap: 12px;
+    }
+}
+
+/* MOBILE NAVIGATION */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mobile-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.mobile-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: block;
+        order: 3;
+        /* Ensure it's on the right */
+    }
+
+    .contact-info {
+        display: none;
+        /* Hide top contact info on mobile if needed, or adjust */
+    }
+
+    /* If you want to keep contact info but simplified:
+    .contact-info { order: 2; margin-right: 15px; } .phone-text { display: none; } 
+    */
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        /* Start off-screen LEFT */
+        /* Start off-screen */
+        width: 70%;
+        /* 7 phần màn hình */
+        height: 100vh;
+        background: #fff;
+        z-index: 999;
+        transition: left 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        /* Shadow to right */
+        padding: 60px 20px;
+        display: block;
+        /* Ensure it's block for vertical flow */
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-menu ul li {
+        width: 100%;
+    }
+
+    .nav-menu ul li a {
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 16px;
+    }
+
+    .nav-menu ul li a:hover,
+    .nav-menu ul li a.active {
+        background: var(--accent-color);
+        padding-left: 10px;
+        color: var(--primary-color);
+    }
+
+    /* Close Button Style */
+    .menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: #555;
+        cursor: pointer;
+        padding: 5px;
+        /* Increase clickable area */
+        display: block;
+        /* Ensure it's visible */
+    }
+
+    /* Custom Mobile Adjustments */
+    .stat-item {
+        width: 100%;
+    }
+
+    .container {
+        margin: 0 auto;
+        /* Reset margin 0 100px */
+        padding: 0 15px;
+    }
+
+    .hero-content {
+        padding: 20px;
+        /* Override pending-left 100px/180px */
     }
 }
