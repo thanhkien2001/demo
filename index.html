@@ -1,531 +1,466 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrowdStrike - Bảo vệ điểm cuối đột phá</title>
+    <title>CrowdStrike Clone - Header & Hero</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="header">
+
+    <header class="navbar">
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="Crowdstrike-315px.webp" alt="CrowdStrike Logo" class="logo-img">
+            <div class="logo">
+                <img src="./Crowdstrike-315px.webp" alt="CrowdStrike Logo">
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">TRANG CHỦ</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Dịch Vụ</a></li>
+                    <li><a href="#">Sản Phẩm <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#">Tin Tức</a></li>
+                </ul>
+            </nav>
+
+            <div class="contact-info">
+                <div class="phone-icon">
+                    <i class="fa-solid fa-phone"></i>
                 </div>
-                <nav class="nav-menu">
-                    <a href="#home" class="nav-link"><i class="fas fa-home"></i> Trang chính</a>
-                    <a href="#products" class="nav-link"><i class="fas fa-cube"></i> Sản phẩm</a>
-                    <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> Giới thiệu</a>
-                    <a href="#news" class="nav-link"><i class="fas fa-newspaper"></i> Tin tức</a>
-                </nav>
-                <div class="header-contact">
-                    <a href="tel:1900123456" class="contact-link">
-                        <i class="fas fa-phone"></i>
-                        <span>1900 123 456</span>
-                    </a>
-                    <a href="#" class="contact-link">
-                        <i class="fab fa-telegram-plane"></i>
-                        <span>Zalo</span>
-                    </a>
+                <div class="phone-text">
+                    <span>Hỗ trợ 24/7</span>
+                    <strong>0876 944 244</strong>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-badge">
-                        <i class="fas fa-star"></i>
-                        <span>Giải pháp bảo mật hàng đầu thế giới</span>
-                    </div>
-                    <h1>Bảo vệ điểm cuối đột phá với AI</h1>
-                    <p>Ngăn chặn mọi cuộc tấn công với nền tảng bảo vệ điểm cuối (Endpoint Protection) thế hệ mới, vận hành trên Cloud. Bảo vệ doanh nghiệp của bạn 24/7 với công nghệ trí tuệ nhân tạo tiên tiến nhất.</p>
-                    <div class="hero-buttons">
-                        <button class="cta-button primary">
-                            <i class="fas fa-play-circle"></i>
-                            Xem Demo
-                        </button>
-                        <button class="cta-button secondary">
-                            <i class="fas fa-download"></i>
-                            Tải Brochure
-                        </button>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="hero-stat-item">
-                            <strong>99.9%</strong>
-                            <span>Hiệu quả phát hiện</span>
-                        </div>
-                        <div class="hero-stat-item">
-                            <strong>10M+</strong>
-                            <span>Thiết bị được bảo vệ</span>
-                        </div>
-                        <div class="hero-stat-item">
-                            <strong>175+</strong>
-                            <span>Quốc gia</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="hero-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop" alt="Bảo mật điểm cuối" class="hero-img">
-                        <div class="floating-badge badge-1">
-                            <i class="fas fa-shield-check"></i>
-                            <span>Bảo mật tối ưu</span>
-                        </div>
-                        <div class="floating-badge badge-2">
-                            <i class="fas fa-cloud"></i>
-                            <span>Cloud Native</span>
-                        </div>
-                    </div>
-                </div>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="badge">Giải pháp an ninh mạng cho doanh nghiệp</span>
+                <h1>Ngăn chặn tấn công mạng trước khi chúng xảy ra với nền tảng bảo mật AI hàng đầu</h1>
+                <p>Nền tảng bảo mật thế hệ mới giúp doanh nghiệp phát hiện, ngăn chặn và phản ứng với các mối đe dọa
+                    theo thời gian thực. Bảo vệ toàn diện Endpoint, Cloud và danh tính người dùng trong một hệ thống duy
+                    nhất.</p>
+
+                <a href="#" class="btn-demo">Yêu cầu demo</a>
             </div>
+
         </div>
     </section>
 
-    <!-- Introduction Section -->
-    <section class="intro-section">
+    <section class="about-us">
         <div class="container">
-            <div class="intro-box">
-                <div class="intro-content">
-                    <h2>Giải pháp bảo mật toàn diện cho doanh nghiệp hiện đại</h2>
-                    <p>CrowdStrike Falcon là nền tảng bảo mật điểm cuối hàng đầu, kết hợp công nghệ AI/ML tiên tiến với khả năng bảo vệ real-time. Chúng tôi giúp doanh nghiệp của bạn chống lại các mối đe dọa mạng phức tạp nhất với độ chính xác và tốc độ vượt trội.</p>
-                    <div class="intro-features">
-                        <div class="intro-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Phát hiện và ngăn chặn mối đe dọa trong thời gian thực</span>
-                        </div>
-                        <div class="intro-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Bảo vệ đa nền tảng: Windows, Mac, Linux, Mobile</span>
-                        </div>
-                        <div class="intro-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Quản lý tập trung qua Cloud Console</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Two Column Section -->
-    <section class="two-column-section">
-        <div class="container">
-            <div class="two-column-content">
-                <div class="two-column-left">
-                    <div class="info-block">
-                        <div class="info-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h3>Hiệu suất vượt trội</h3>
-                        <p>Giảm 95% thời gian phản ứng với mối đe dọa, xử lý hàng tỷ sự kiện mỗi giây với độ trễ thấp nhất trong ngành.</p>
-                    </div>
-                    <div class="info-block">
-                        <div class="info-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>Trí tuệ nhân tạo</h3>
-                        <p>Công nghệ AI/ML tự động học hỏi và thích ứng với các mối đe dọa mới, bảo vệ bạn trước cả khi chúng được phát hiện.</p>
-                    </div>
-                </div>
-                <div class="two-column-right">
-                    <div class="image-placeholder">
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop" alt="Công nghệ bảo mật" class="section-img">
-                        <div class="image-overlay">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-                    </div>
-                    <button class="cta-button">
-                        <i class="fas fa-video"></i>
-                        Xem Video Giới Thiệu
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section" id="products">
-        <div class="container">
-            <h2 class="section-title">Crowdstrike công cụ bảo mật toàn diện</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon icon-1">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Endpoint Protection</h3>
-                    <p>Bảo vệ toàn diện cho mọi thiết bị đầu cuối với công nghệ NGAV (Next-Generation Antivirus) và EDR tiên tiến nhất.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon icon-2">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud Security</h3>
-                    <p>Bảo vệ môi trường đám mây của bạn với khả năng giám sát và phát hiện mối đe dọa đa cloud hiệu quả.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon icon-3">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Threat Hunting</h3>
-                    <p>Đội ngũ chuyên gia săn lùng mối đe dọa 24/7 để phát hiện và ngăn chặn các cuộc tấn công tinh vi nhất.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon icon-4">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Threat Intelligence</h3>
-                    <p>Dữ liệu tình báo mối đe dọa từ hàng tỷ sự kiện được thu thập từ mạng lưới khách hàng toàn cầu.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon icon-5">
-                        <i class="fas fa-user-shield"></i>
-                    </div>
-                    <h3>Identity Protection</h3>
-                    <p>Bảo vệ danh tính và quyền truy cập với công nghệ Zero Trust và xác thực đa yếu tố.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon icon-6">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Network Security</h3>
-                    <p>Giám sát và bảo vệ mạng lưới với khả năng phát hiện các hành vi bất thường và tấn công mạng.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Section -->
-    <section class="why-choose-section">
-        <div class="container">
-            <h2 class="section-title">Tại sao nên chọn Crowdstrike</h2>
-            <div class="why-choose-grid">
-                <div class="why-choose-card">
-                    <div class="why-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>Lãnh đạo thị trường được công nhận</h3>
-                    <p>CrowdStrike được Gartner xếp hạng Magic Quadrant Leader liên tiếp nhiều năm, được đánh giá cao bởi các chuyên gia bảo mật hàng đầu thế giới. Hơn 10,000+ khách hàng trên toàn cầu tin tưởng sử dụng giải pháp của chúng tôi.</p>
-                    <ul class="why-list">
-                        <li><i class="fas fa-check"></i> Magic Quadrant Leader 5 năm liên tiếp</li>
-                        <li><i class="fas fa-check"></i> Top 3 Gartner Peer Insights</li>
-                        <li><i class="fas fa-check"></i> 10,000+ khách hàng toàn cầu</li>
-                    </ul>
-                </div>
-                <div class="why-choose-card card-with-image">
-                    <div class="why-image">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop" alt="Bảo mật doanh nghiệp">
-                    </div>
-                    <div class="why-content">
-                        <h3>Bảo vệ mọi lúc mọi nơi</h3>
-                        <p>Với kiến trúc cloud-native, CrowdStrike Falcon hoạt động mọi lúc mọi nơi, tự động cập nhật và bảo vệ bạn khỏi các mối đe dọa mới nhất mà không cần restart hay downtime.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Statistics Section -->
-    <section class="stats-section">
-        <div class="container">
-            <h2 class="section-title">Các thông số về Crowdstrike</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="stat-number" data-count="175">0</div>
-                    <div class="stat-suffix">+</div>
-                    <h3>Quốc gia</h3>
-                    <p>Hiện diện trên toàn cầu với mạng lưới khách hàng rộng khắp</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <div class="stat-number" data-count="10">0</div>
-                    <div class="stat-suffix">M+</div>
-                    <h3>Thiết bị được bảo vệ</h3>
-                    <p>Hơn 10 triệu thiết bị đang được bảo vệ bởi CrowdStrike Falcon</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="stat-number" data-count="99">0</div>
-                    <div class="stat-suffix">.9%</div>
-                    <h3>Hiệu quả phát hiện</h3>
-                    <p>Tỷ lệ phát hiện và ngăn chặn mối đe dọa đạt gần 100%</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Banner Section -->
-    <section class="banner-section">
-        <div class="banner-image-wrapper">
-            <img src="banner-form.jpg" alt="CrowdStrike Banner" class="banner-image">
-        </div>
-    </section>
-
-    <!-- Product Packages Section -->
-    <section class="packages-section">
-        <div class="container">
-            <h2 class="section-title">Gói sản phẩm của Crowdstrike</h2>
-            <div class="packages-slider-wrapper">
-                <button class="slider-btn slider-btn-prev" id="prevBtn" aria-label="Previous">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="packages-slider" id="packagesSlider">
-                    <div class="package-card">
-                        <div class="package-image">
-                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop" alt="Falcon Pro">
-                        </div>
-                        <div class="package-content">
-                            <h3 class="package-name">Falcon Pro</h3>
-                            <div class="package-price">Từ $8.99/thiết bị/tháng</div>
-                            <div class="package-divider"></div>
-                            <ul class="package-features">
-                                <li><span class="checkmark">✓</span> NGAV (Next-Gen Antivirus)</li>
-                                <li><span class="checkmark">✓</span> EDR (Endpoint Detection & Response)</li>
-                                <li><span class="checkmark">✓</span> Threat Intelligence</li>
-                                <li><span class="checkmark">✓</span> Cloud Console</li>
-                                <li><span class="checkmark">✓</span> 24/7 Support</li>
-                            </ul>
-                            <button class="package-button">
-                                <i class="fas fa-phone"></i>
-                                Liên hệ
-                            </button>
-                        </div>
-                    </div>
-                    <div class="package-card featured">
-                        <div class="package-image">
-                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=300&fit=crop" alt="Falcon Complete">
-                        </div>
-                        <div class="package-content">
-                            <h3 class="package-name">Falcon Complete</h3>
-                            <div class="package-price">Từ $24.99/thiết bị/tháng</div>
-                            <div class="package-divider"></div>
-                            <ul class="package-features">
-                                <li><span class="checkmark">✓</span> Tất cả tính năng Pro</li>
-                                <li><span class="checkmark">✓</span> Managed Detection & Response</li>
-                                <li><span class="checkmark">✓</span> Incident Response</li>
-                                <li><span class="checkmark">✓</span> Forensic Analysis</li>
-                                <li><span class="checkmark">✓</span> Dedicated Support Team</li>
-                                <li><span class="checkmark">✓</span> SLA 15 phút</li>
-                            </ul>
-                            <button class="package-button featured-button">
-                                <i class="fas fa-phone"></i>
-                                Liên hệ
-                            </button>
-                        </div>
-                    </div>
-                    <div class="package-card">
-                        <div class="package-image">
-                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop" alt="Falcon Elite">
-                        </div>
-                        <div class="package-content">
-                            <h3 class="package-name">Falcon Elite</h3>
-                            <div class="package-price">Giá tùy chỉnh</div>
-                            <div class="package-divider"></div>
-                            <ul class="package-features">
-                                <li><span class="checkmark">✓</span> Tất cả tính năng Complete</li>
-                                <li><span class="checkmark">✓</span> 24/7 Dedicated Team</li>
-                                <li><span class="checkmark">✓</span> Custom Integration</li>
-                                <li><span class="checkmark">✓</span> Priority Response</li>
-                                <li><span class="checkmark">✓</span> White-glove Service</li>
-                            </ul>
-                            <button class="package-button">
-                                <i class="fas fa-phone"></i>
-                                Liên hệ
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <button class="slider-btn slider-btn-next" id="nextBtn" aria-label="Next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-            <div class="slider-dots" id="sliderDots"></div>
-        </div>
-    </section>
-
-    <!-- Demo Request Section -->
-    <section class="demo-section">
-        <div class="container">
-            <div class="demo-wrapper">
-                <div class="demo-info">
-                    <h2 class="demo-info-title">Yêu cầu demo miễn phí</h2>
-                    <p class="demo-info-description">
-                        Để lại thông tin của bạn, chúng tôi sẽ liên hệ trong vòng 24 giờ để tư vấn giải pháp bảo mật phù hợp nhất với doanh nghiệp của bạn.
+            <div class="about-wrapper">
+                <div class="about-content reveal">
+                    <span class="sub-title">/ VỀ CHÚNG TÔI /</span>
+                    <h2 class="main-title">Bảo Vệ Doanh Nghiệp Bằng Trí Tuệ Nhân Tạo</h2>
+                    <p class="description">
+                        CrowdStrike là đơn vị tiên phong trong việc ngăn chặn các cuộc tấn công mạng hiện đại.
+                        Chúng tôi kết hợp sức mạnh của trí tuệ nhân tạo (AI) và dữ liệu đám mây để phát hiện,
+                        phản ứng nhanh chóng với mọi mối đe dọa, đảm bảo an toàn tuyệt đối cho hạ tầng số của bạn.
                     </p>
-                    <div class="demo-benefits">
-                        <div class="demo-benefit-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Demo miễn phí 30 ngày</span>
-                        </div>
-                        <div class="demo-benefit-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Tư vấn bởi chuyên gia</span>
-                        </div>
-                        <div class="demo-benefit-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Hỗ trợ 24/7</span>
-                        </div>
-                    </div>
-                    <div class="demo-contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <strong>Hotline</strong>
-                                <span>1900 123 456</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email</strong>
-                                <span>info@crowdstrike.vn</span>
-                            </div>
-                        </div>
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-check"></i> Ngăn chặn mã độc thực thi trong giây lát</li>
+                        <li><i class="fa-solid fa-check"></i> Đội ngũ chuyên gia hỗ trợ kỹ thuật 24/7</li>
+                        <li><i class="fa-solid fa-check"></i> Giải pháp bảo mật đám mây hàng đầu thế giới</li>
+                    </ul>
+                </div>
+
+                <div class="about-graphics reveal">
+                    <div class="image-wrapper">
+                        <img src="https://media.istockphoto.com/id/1397398956/vi/anh/l%C3%A1-ch%E1%BA%AFn-k%E1%BB%B9-thu%E1%BA%ADt-s%E1%BB%91-3d-render-%E1%BA%A3nh-ch%E1%BB%A9ng-kho%C3%A1n.jpg?b=1&s=612x612&w=0&k=20&c=GX2Zcq9rVmCzgFSB4tIsewwyI3hyaQbho2ybJ0hlu1g="
+                            alt="Công nghệ bộ não AI CrowdStrike" class="img-fluid">
+                        <div class="decor-box box-1"></div>
+                        <div class="decor-box box-2"></div>
                     </div>
                 </div>
-                <div class="demo-form-wrapper">
-                    <form class="demo-form">
-                        <div class="form-body">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">
-                                        <i class="fas fa-user"></i>
-                                        Họ và tên <span class="required">*</span>
-                                    </label>
-                                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="company">
-                                        <i class="fas fa-building"></i>
-                                        Công ty
-                                    </label>
-                                    <input type="text" id="company" name="company" placeholder="Tên công ty">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">
-                                        <i class="fas fa-envelope"></i>
-                                        Email <span class="required">*</span>
-                                    </label>
-                                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">
-                                        <i class="fas fa-phone"></i>
-                                        Số điện thoại <span class="required">*</span>
-                                    </label>
-                                    <input type="tel" id="phone" name="phone" placeholder="0900 000 000" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">
-                                    <i class="fas fa-comment-alt"></i>
-                                    Ghi chú / Yêu cầu
-                                </label>
-                                <textarea id="message" name="message" rows="4" placeholder="Nhập yêu cầu hoặc câu hỏi của bạn..."></textarea>
-                            </div>
-                            <button type="submit" class="submit-button">
-                                <i class="fas fa-paper-plane"></i>
-                                Gửi yêu cầu demo
-                            </button>
-                        </div>
-                    </form>
+            </div>
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">/ CROWDSTRIKE /</span>
+                <h2 class="main-title">Bộ Công Cụ Bảo Mật Toàn Diện</h2>
+            </div>
+
+            <div class="features-grid reveal">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6863/6863414.png" alt="NGAV">
+                    </div>
+                    <h3>Ngân Chặn Mã Độc (NGAV)</h3>
+                    <p>Sử dụng trí tuệ nhân tạo (AI) và Machine Learning để ngăn chặn các cuộc tấn công không cần file
+                        (fileless) và mã độc mới nhất, vượt xa khả năng của Antivirus truyền thống.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2438/2438078.png" alt="EDR">
+                    </div>
+                    <h3>Phát Hiện & Phản Ứng (EDR)</h3>
+                    <p>Khả năng hiển thị toàn diện, ghi lại mọi hoạt động trên điểm cuối. Nhanh chóng phát hiện, phân
+                        tích gốc rễ và phản ứng với các mối đe dọa phức tạp.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1067/1067566.png" alt="Threat Hunting">
+                    </div>
+                    <h3>Threat Hunting 24/7</h3>
+                    <p>Đội ngũ Threat Hunting tinh nhuệ của CrowdStrike liên tục săn lùng các mối đe dọa tiên tiến, đảm
+                        bảo không có gì bị bỏ sót trong môi trường của bạn.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <section class="advantage-section">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="Crowdstrike-315px.webp" alt="CrowdStrike Logo" class="footer-logo-img">
-                    </div>
-                    <p><i class="fas fa-map-marker-alt"></i> 206 E. 9th Street, Suite 1400, Austin, TX 78701, USA</p>
-                    <p><i class="fas fa-envelope"></i> info@crowdstrike.vn</p>
-                    <p><i class="fas fa-phone"></i> Hotline: 1900 123 456</p>
-                    <p><i class="fas fa-clock"></i> 24/7 Support</p>
-                </div>
-                <div class="footer-column">
-                    <h4>Link nhanh</h4>
-                    <ul>
-                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Trang chủ</a></li>
-                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Sản phẩm</a></li>
-                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Giới thiệu</a></li>
-                        <li><a href="#news"><i class="fas fa-chevron-right"></i> Tin tức</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Tài liệu</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Dịch vụ</h4>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Endpoint Protection</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cloud Security</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Threat Intelligence</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Threat Hunting</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Incident Response</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Kết nối với chúng tôi</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link facebook">
-                            <i class="fab fa-facebook-f"></i>
-                            <span>Facebook</span>
-                        </a>
-                        <a href="#" class="social-link linkedin">
-                            <i class="fab fa-linkedin-in"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="#" class="social-link twitter">
-                            <i class="fab fa-twitter"></i>
-                            <span>Twitter</span>
-                        </a>
-                        <a href="#" class="social-link youtube">
-                            <i class="fab fa-youtube"></i>
-                            <span>YouTube</span>
-                        </a>
-                    </div>
-                    <div class="footer-newsletter">
-                        <h5>Đăng ký nhận tin</h5>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Email của bạn">
-                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                        </form>
-                    </div>
-                </div>
+            <div class="section-header">
+                <span class="sub-title">/ LỢI THẾ CẠNH TRANH /</span>
+                <h2 class="main-title">Tại Sao Chọn CrowdStrike Falcon?</h2>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 CrowdStrike, Inc. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Chính sách bảo mật</a>
-                    <a href="#">Điều khoản sử dụng</a>
-                    <a href="#">Cookie Policy</a>
+
+            <div class="advantage-content">
+                <div class="advantage-list reveal">
+                    <div class="advantage-item">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="item-text">
+                            <h3>Cài Đặt Dễ Dàng, Tác Động Nhẹ</h3>
+                            <p>Triển khai nhanh chóng chỉ trong vài giây. Agent dung lượng siêu nhẹ (dưới 50MB), không
+                                cần khởi động lại, không ảnh hưởng đến hiệu suất hệ thống.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <div class="item-text">
+                            <h3>Nền Tảng Đám Mây (Cloud-Native)</h3>
+                            <p>Quản lý tập trung trên nền tảng đám mây duy nhất, đảm bảo khả năng mở rộng, cập nhật liên
+                                tục và bảo vệ tức thì mọi lúc mọi nơi.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-item">
+                        <div class="item-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="item-text">
+                            <h3>Phản Ứng Tức Thì</h3>
+                            <p>Phát hiện và ngăn chặn các mối đe dọa trong vòng vài giây (breakout time), giảm thiểu tối
+                                đa rủi ro và thiệt hại cho doanh nghiệp của bạn.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="advantage-image reveal">
+                    <div class="image-wrapper">
+                        <img src="https://www.nait.vn/uploads/news/2024/07/ha.png" alt="Cloud Security">
+                        <div class="decor-box box-1"></div>
+                        <div class="decor-box box-2"></div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="stats-section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">/ CÁC THÔNG SỐ /</span>
+                <h2 class="main-title">Niềm Tin Của Các Doanh Nghiệp Toàn Cầu</h2>
+            </div>
+
+            <div class="stats-grid reveal">
+                <div class="stat-item">
+                    <div class="stat-value">180 +</div>
+                    <div class="stat-label">Quốc Gia Được Bảo Vệ</div>
+                    <p>Sự hiện diện toàn cầu của CrowdStrike</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-value">99.9 %</div>
+                    <div class="stat-label">Độ Phát Hiện Chính Xác</div>
+                    <p>Hiệu suất ngăn chặn các mối đe dọa</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-value">1 Giây</div>
+                    <div class="stat-label">Thời Gian Phản Ứng Trung Bình</div>
+                    <p>Tốc độ hành động khi phát hiện mối đe dọa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ticker-wrapper">
+        <div class="ticker-content">
+            <div class="ticker-item">PROTECTION <i class="fa-solid fa-cloud"></i></div>
+            <div class="ticker-item">THREAT INTELLIGENCE <i class="fa-solid fa-bug-slash"></i></div>
+            <div class="ticker-item">ENDPOINT SECURITY <i class="fa-solid fa-shield-halved"></i></div>
+            <div class="ticker-item">STOP BREACHES <i class="fa-solid fa-shield-virus"></i></div>
+            <div class="ticker-item">WE STOP BREACHES <i class="fa-solid fa-lock"></i></div>
+            <div class="ticker-item">CLOUD-DELIVERED <i class="fa-solid fa-server"></i></div>
+
+            <div class="ticker-item">PROTECTION <i class="fa-solid fa-cloud"></i></div>
+            <div class="ticker-item">THREAT INTELLIGENCE <i class="fa-solid fa-bug-slash"></i></div>
+            <div class="ticker-item">ENDPOINT SECURITY <i class="fa-solid fa-shield-halved"></i></div>
+            <div class="ticker-item">STOP BREACHES <i class="fa-solid fa-shield-virus"></i></div>
+            <div class="ticker-item">WE STOP BREACHES <i class="fa-solid fa-lock"></i></div>
+            <div class="ticker-item">CLOUD-DELIVERED <i class="fa-solid fa-server"></i></div>
+        </div>
+    </div>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">/ SẢN PHẨM /</span>
+                <h2 class="main-title">Gói CrowdStrike Falcon Theo Nhu Cầu</h2>
+            </div>
+
+            <div class="pricing-grid reveal">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Falcon Starter</h3>
+                        <p>Bảo vệ nền tảng cho doanh nghiệp nhỏ</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="feature-group">
+                            <h4>ĐIỂM NỔI BẬT</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Triển khai nhanh, quản lý tập trung</li>
+                                <li><i class="fa-solid fa-check"></i> Chính sách bảo vệ cơ bản, dễ vận hành</li>
+                                <li><i class="fa-solid fa-check"></i> Phù hợp đội IT mỏng</li>
+                            </ul>
+                        </div>
+                        <div class="feature-group">
+                            <h4>TÍNH NĂNG</h4>
+                            <ul class="main-features">
+                                <li><i class="fa-solid fa-circle-dot"></i> Next-Gen Antivirus (NGAV)</li>
+                                <li><i class="fa-solid fa-circle-dot"></i> Bảo vệ theo hành vi cơ bản</li>
+                                <li><i class="fa-solid fa-circle-dot"></i> Báo cáo & cảnh báo tiêu chuẩn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="target-user">Phù hợp: Startup, SMB, IT gọn</p>
+                        <a href="#" class="btn-outline">Nhận tư vấn</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="badge-recommend">Khuyên dùng</div>
+                    <div class="card-header">
+                        <h3>Falcon Business</h3>
+                        <p>Cân bằng chi phí & mức bảo vệ</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="feature-group">
+                            <h4>ĐIỂM NỔI BẬT</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Kiểm soát USB/thiết bị ngoại vi</li>
+                                <li><i class="fa-solid fa-check"></i> Chính sách theo nhóm máy, dễ scale</li>
+                                <li><i class="fa-solid fa-check"></i> Phù hợp đa phòng ban/chi nhánh</li>
+                            </ul>
+                        </div>
+                        <div class="feature-group">
+                            <h4>TÍNH NĂNG</h4>
+                            <ul class="main-features">
+                                <li><i class="fa-solid fa-circle-dot"></i> NGAV nâng cao</li>
+                                <li><i class="fa-solid fa-circle-dot"></i> Device Control (USB/ổ cứng)</li>
+                                <li><i class="fa-solid fa-circle-dot"></i> Chính sách theo nhóm & vai trò</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="target-user">Phù hợp: SME, công ty 50-500 máy</p>
+                        <a href="#" class="btn-filled">Yêu cầu báo giá</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Falcon Pro</h3>
+                        <p>Tăng điều tra & xử lý sự cố</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="feature-group">
+                            <h4>ĐIỂM NỔI BẬT</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Quan sát hoạt động endpoint sâu hơn</li>
+                                <li><i class="fa-solid fa-check"></i> Hỗ trợ điều tra nguyên nhân sự cố</li>
+                                <li><i class="fa-solid fa-check"></i> Phù hợp IT/SOC nội bộ</li>
+                            </ul>
+                        </div>
+                        <div class="feature-group">
+                            <h4>TÍNH NĂNG</h4>
+                            <ul class="main-features">
+                                <li><i class="fa-solid fa-circle-dot"></i> NGAV + bảo vệ hành vi</li>
+                                <li><i class="fa-solid fa-circle-dot"></i> EDR cơ bản (điều tra)</li>
+                                <li><i class="fa-solid fa-circle-dot"></i> Playbook xử lý sự cố</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="target-user">Phù hợp: IT chuyên trách, SOC</p>
+                        <a href="#" class="btn-outline">Nhận tư vấn</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Falcon Enterprise</h3>
+                        <p>Quy mô lớn & tích hợp hệ thống</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="feature-group">
+                            <h4>ĐIỂM NỔI BẬT</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Tích hợp SIEM/SOAR theo hạ tầng</li>
+                                <li><i class="fa-solid fa-check"></i> Quản trị quy mô lớn, đa chi nhánh</li>
+                                <li><i class="fa-solid fa-check"></i> Hỗ trợ ưu tiên theo SLA</li>
+                            </ul>
+                        </div>
+                        <div class="feature-group">
+                            <h4>TÍNH NĂNG</h4>
+                            <ul class="main-features">
+                                <li><i class="fa-solid fa-circle-dot"></i> EDR nâng cao & phản hồi</li>
+                                <li><i class="fa-solid fa-circle-dot"></i> Threat Intelligence & hunting</li>
+                                <li><i class="fa-solid fa-circle-dot"></i> Tích hợp SIEM/SOAR (tuỳ hạ tầng)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p class="target-user">Phù hợp: Enterprise, tập đoàn</p>
+                        <a href="#" class="btn-outline">Nhận tư vấn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container contact-container">
+
+            <div class="contact-info-left reveal">
+                <div class="contact-badge">
+                    <i class="fa-solid fa-circle-dot"></i> Tư vấn miễn phí • Phản hồi trong 24h
+                </div>
+                <span class="sub-title">/ LIÊN HỆ TƯ VẤN /</span>
+                <h2 class="contact-title">Nhận Tư Vấn & Báo Giá Giải Pháp CrowdStrike Falcon</h2>
+                <p class="contact-desc">
+                    Đội ngũ chuyên gia hỗ trợ đánh giá hiện trạng an ninh, tư vấn gói CrowdStrike phù hợp và lộ trình
+                    triển khai tối ưu cho doanh nghiệp. Hoàn toàn miễn phí – không ràng buộc.
+                </p>
+
+                <div class="advantage-pills">
+                    <span class="pill"><i class="fa-solid fa-bolt"></i> Triển khai nhanh</span>
+                    <span class="pill"><i class="fa-solid fa-shield-halved"></i> Bảo vệ thời gian thực</span>
+                    <span class="pill"><i class="fa-solid fa-cloud"></i> Cloud-native</span>
+                </div>
+
+                <ul class="contact-features">
+                    <li><i class="fa-solid fa-circle-check"></i> Tư vấn theo quy mô hệ thống</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Demo & lộ trình triển khai</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Báo giá rõ ràng, hỗ trợ kỹ thuật</li>
+                </ul>
+
+            </div>
+
+            <div class="contact-form-right reveal">
+                <form action="#">
+                    <div class="form-row">
+                        <input type="text" placeholder="Họ và tên" required>
+                        <input type="text" placeholder="Tên công ty" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" placeholder="Email công việc" required>
+                        <input type="tel" placeholder="Số điện thoại" required>
+                    </div>
+                    <textarea placeholder="Mô tả nhanh quy mô hệ thống / nhu cầu bảo mật" rows="4"></textarea>
+
+                    <button type="submit" class="btn-submit">Gửi yêu cầu tư vấn</button>
+                    <p class="form-subtext">Bằng việc gửi form, bạn đồng ý để chúng tôi liên hệ tư vấn.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-col">
+                <h4 class="footer-title">CROWDSTRIKE VIỆT NAM</h4>
+                <div class="footer-content">
+                    <p><strong>Văn phòng:</strong> Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p><strong>Hotline:</strong> 0876 944 244</p>
+                    <p><strong>Email:</strong> sales@yourdomain.com</p>
+                    <p class="auth-text">
+                        Đối tác ủy quyền cung cấp nền tảng CrowdStrike Falcon, triển khai và hỗ trợ kỹ thuật doanh
+                        nghiệp tại Việt Nam.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">CROWDSTRIKE, INC.</h4>
+                <div class="footer-content">
+                    <p><strong>Trụ sở chính:</strong> Sunnyvale, California, Hoa Kỳ</p>
+                    <p>
+                        Dẫn đầu toàn cầu về bảo vệ điểm cuối trên nền tảng đám mây, tình báo mối đe dọa và phản ứng sự
+                        cố an ninh mạng.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">THÔNG TIN</h4>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <a href="#">Về CrowdStrike</a>
+                        <a href="#">Bảo vệ điểm cuối</a>
+                        <a href="#">Phản ứng sự cố</a>
+                        <a href="#">Nghiên cứu điển hình</a>
+                    </div>
+                    <div class="link-group">
+                        <a href="#">Nền tảng Falcon</a>
+                        <a href="#">Tình báo mối đe dọa</a>
+                        <a href="#">Bảng giá & Bản quyền</a>
+                        <a href="#">Liên hệ kinh doanh</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 CrowdStrike. Bảo lưu mọi quyền.</p>
+                <p>Trang web này được vận hành bởi đối tác ủy quyền của CrowdStrike tại Việt Nam. Phát triển bởi <span
+                        class="developer">Ifreelancer</span></p>
+                <p class="legal-text">CrowdStrike và logo CrowdStrike Falcon là nhãn hiệu đã đăng ký của CrowdStrike,
+                    Inc.</p>
+            </div>
+        </div>
+
+        <a href="#" class="back-to-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
-</html>
 
+</html>
