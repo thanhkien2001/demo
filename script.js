@@ -268,3 +268,40 @@ const revealObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 
+// Mobile Menu Logic
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const overlay = document.querySelector('.mobile-overlay');
+
+if (menuToggle && navMenu && overlay) {
+    // Toggle menu
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    // Close button logic
+    const closeBtn = document.querySelector('.menu-close');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    }
+
+    // Close when clicking overlay
+    overlay.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+
+    // Close when clicking a link
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    });
+}
+
+
