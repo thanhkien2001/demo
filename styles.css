@@ -917,7 +917,7 @@ textarea:focus {
 }
 
 .btn-submit:hover {
-    background: #c1152d;
+    background: var(--secondary-color);
     transform: translateY(-2px);
 }
 
@@ -1187,5 +1187,9 @@ textarea:focus {
     .hero-content {
         padding: 20px;
         /* Override pending-left 100px/180px */
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
     }
 }
